@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <section id="startScreen">
+      <div style="font-size: 18px; margin-bottom: 10px;">2 players need to join the game to start</div>
+      <div id="userAvatars" style="margin-bottom: 10px;"></div>
+      <div class="startScreenButtons">
+        <button class="gameButton gameJoin" onclick="handleJoinGame()">Join</button>
+        <button class="gameButton gameStart" onclick="handleStartGame()" style="display: none;">Start</button>
+      </div>
+    </section>
+    <section id="gameScreen" style="display: none;">
+      <div class="gameContainer">
+        <div data-cell-index="0" class="cell" style="display: flex;justify-content: center;">
+          <img class="userAvatar" src="./tictactoe.png" />
+        </div>
+        <div data-cell-index="1" class="cell">
+          <img class="userAvatar" src="./tictactoe.png" />
+        </div>
+        <div data-cell-index="2" class="cell">
+          <img class="userAvatar" src="./tictactoe.png" />
+        </div>
+        <div data-cell-index="3" class="cell">
+          <img class="userAvatar" src="./tictactoe.png" />
+        </div>
+        <div data-cell-index="4" class="cell">
+          <img class="userAvatar" src="./tictactoe.png" />
+        </div>
+        <div data-cell-index="5" class="cell">
+          <img class="userAvatar" src="./tictactoe.png" />
+        </div>
+        <div data-cell-index="6" class="cell">
+          <img class="userAvatar" src="./tictactoe.png" />
+        </div>
+        <div data-cell-index="7" class="cell">
+          <img class="userAvatar" src="./tictactoe.png" />
+        </div>
+        <div data-cell-index="8" class="cell">
+          <img class="userAvatar" src="./tictactoe.png" />
+        </div>
+      </div>
+      <h2 class="gameStatus"></h2>
+      <button class="gameButton gameRestart" onclick="handleRestartGame()">Restart</button>
+    </section>
+  </body>
+</html>

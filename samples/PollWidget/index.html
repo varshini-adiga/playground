@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="poll-setup" class="wrapper">
+      <header>Create your poll</header>
+      <div class="group">
+        <span>Subject</span>
+        <input id="poll-subject" type="text" />
+      </div>
+      <div class="group" style="text-align: right">
+        <button class="button" onclick="addOption()">Add Option</button>
+      </div>
+      <div id="option-wrapper"></div>
+      <div class="group" style="text-align: right">
+        <button class="button" onclick="beginPoll()">Begin Poll</button>
+      </div>
+      <div class="error" id="error"></div>
+    </div>
+    <div id="poll-results" class="wrapper" style="display: none">
+      <header>Poll Results</header>
+      <div class="group"><span id="poll-title"></span></div>
+      <div id="poll-wrapper" class="poll-area"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <sp-theme color="light">
+      <div class="cardDiv">
+        <div class="cardDiv">
+          <sp-illustrated-message
+            heading="Shapes Creator"
+            description="Create any number of following shapes"
+            class="illustratedMessage"
+            >
+          </sp-illustrated-message>
+          <div class="divRow">
+            <div class="iconRowItem">
+              <sp-icon-text size="xl" slot="icon"></sp-icon-text>
+            </div>
+            <div class="divRowItem">
+              <sp-number-field value="1" min="1" class="shapesNumberField" id="numTextObjs">
+              </sp-number-field>
+            </div>
+            <div class="divRowItem">
+              <sp-action-button emphasized onclick="createTextHandler()">Create</sp-action-button>
+            </div>
+          </div>
+          <div class="divRow">
+            <div class="iconRowItem" style="">
+              <sp-icon-ellipse size="xl" slot="icon"></sp-icon-ellipse>
+            </div>
+            <div class="divRowItem">
+              <sp-number-field value="1" min="1" class="shapesNumberField" id="numEllipseObjs">
+              </sp-number-field>
+            </div>
+            <div class="divRowItem">
+              <sp-action-button emphasized onclick="createEllipseHandler()">Create</sp-action-button>
+            </div>
+          </div>
+          <div class="divRow">
+            <div class="iconRowItem" style="">
+              <sp-icon-rectangle size="xl" slot="icon"></sp-icon-rectangle>
+            </div>
+            <div class="divRowItem">
+              <sp-number-field value="1" min="1" class="shapesNumberField" id="numRectObjs">
+              </sp-number-field>
+            </div>
+            <div class="divRowItem">
+              <sp-action-button emphasized onclick="createRectangleHandler()">Create</sp-action-button>
+            </div>
+          </div>
+          <div class="divRow">
+            <div class="iconRowItem" style="">
+              <sp-icon-line size="xl" slot="icon"></sp-icon-line>
+            </div>
+            <div class="divRowItem">
+              <sp-number-field value="1" min="1" class="shapesNumberField" id="numLineObjs">
+              </sp-number-field>
+            </div>
+            <div class="divRowItem">
+              <sp-action-button emphasized onclick="createLineHandler()">Create</sp-action-button>
+            </div>
+          </div>
+        </div>
+        <sp-divider size="s" class="dividerClass"></sp-divider>
+        <div class="cardDiv">
+          <sp-illustrated-message
+            heading="Image Fill"
+            description="Apply image(s) to selected shape(s)"
+            class="illustratedMessage"
+            >
+          </sp-illustrated-message>
+          <div class="divRow">
+            <div class="divRowItem">
+              <sp-dropzone id="dropzoneInput" tabindex="0" class="dropzoneClass">
+                <sp-illustrated-message heading="Drag and Drop File(s)" 
+                  style="width: 225px; padding-right: 0px;">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 69"
+                    width="100"
+                    height="69"
+                    >
+                    <path d="M 89.132812 5.695312 L 10.464844 5.695312 C 9.199219 5.695312 8.132812 6.765625 8.132812 8.039062 L 8.132812 26.125 C 8.132812 26.664062 8.601562 27.132812 9.132812 27.132812 C 9.667969 27.132812 10.132812 26.664062 10.132812 26.125 L 10.132812 15.742188 L 89.464844 15.742188 L 89.464844 61.632812 C 89.464844 61.832031 89.332031 61.964844 89.132812 61.964844 L 10.464844 61.964844 C 10.265625 61.964844 10.132812 61.832031 10.132812 61.632812 L 10.132812 46.222656 C 10.132812 45.6875 9.667969 45.21875 9.132812 45.21875 C 8.601562 45.21875 8.132812 45.6875 8.132812 46.222656 L 8.132812 61.632812 C 8.132812 62.902344 9.199219 63.976562 10.464844 63.976562 L 89.132812 63.976562 C 90.398438 63.976562 91.464844 62.902344 91.464844 61.632812 L 91.464844 8.039062 C 91.464844 6.765625 90.398438 5.695312 89.132812 5.695312 Z M 10.132812 14.402344 L 10.132812 8.039062 C 10.132812 7.835938 10.265625 7.703125 10.464844 7.703125 L 89.132812 7.703125 C 89.332031 7.703125 89.464844 7.835938 89.464844 8.039062 L 89.464844 14.402344 Z M 21.734375 11.054688 C 21.734375 11.457031 21.464844 11.722656 21.066406 11.722656 L 14.398438 11.722656 C 14 11.722656 13.734375 11.457031 13.734375 11.054688 C 13.734375 10.652344 14 10.382812 14.398438 10.382812 L 21.066406 10.382812 C 21.464844 10.382812 21.734375 10.652344 21.734375 11.054688 Z M 9.066406 37.582031 L 3.332031 43.277344 C 3.199219 43.542969 2.933594 43.609375 2.667969 43.609375 C 2.398438 43.609375 2.132812 43.542969 1.933594 43.34375 C 1.535156 42.941406 1.535156 42.335938 1.933594 41.9375 L 7.667969 36.242188 L 1.933594 30.546875 C 1.535156 30.144531 1.535156 29.542969 1.933594 29.140625 C 2.332031 28.738281 2.933594 28.738281 3.332031 29.140625 L 9.066406 34.835938 L 14.800781 29.140625 C 15.199219 28.738281 15.800781 28.738281 16.199219 29.140625 C 16.601562 29.542969 16.601562 30.144531 16.199219 30.546875 L 10.535156 36.175781 L 16.265625 41.867188 C 16.667969 42.269531 16.667969 42.875 16.265625 43.277344 C 16.066406 43.476562 15.800781 43.542969 15.535156 43.542969 C 15.265625 43.542969 15 43.476562 14.800781 43.277344 Z M 9.066406 37.582031 "/>
+                  </svg>
+                </sp-illustrated-message>
+                <div style="width: 175px; margin-left: 20px">
+                  <label onclick="this.nextElementSibling.click()">
+                    <sp-link href="javascript:;">Select File(s)</sp-link>
+                    from your computer
+                  </label>
+                  <input type="file" id="fileInput" accept="image/*" 
+                    style="display: none" onchange="fileInputHandler()" multiple />
+                </div>
+              </sp-dropzone>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sp-theme>
+  </body>
+</html>

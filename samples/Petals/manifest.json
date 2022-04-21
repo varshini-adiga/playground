@@ -1,0 +1,6 @@
+{
+    "name": "Petals PG",
+    "id": "com.adobe.hz.petals.pg",
+    "main": "petals.js",
+    "type": "managed-ui"
+}

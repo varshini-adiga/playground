@@ -1,0 +1,65 @@
+body {
+  width: 100%;
+  background-color: #f5f5f5;
+  margin: 0px;
+}
+
+* {
+  font-family: "Source Sans Pro";
+}
+
+p,
+span {
+  color: var(--spectrum-global-color-gray-800);
+}
+
+.cardDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--spectrum-global-color-gray-100);
+}
+
+.divRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.divColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.divRowItem {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.iconRowItem {
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.illustratedMessage {
+  align-items: start;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+
+.shapesNumberField {
+  width: 80px;
+}
+
+.dividerClass {
+  margin-top: 20px;
+}
+
+.dropzoneClass {
+  width: 230;
+  height: 180px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}

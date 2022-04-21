@@ -1,0 +1,6 @@
+{
+    "name": "Managed UI PG",
+    "id": "com.adobe.hz.managedUIDemo.pg",
+    "main": "plugin.js",
+    "type": "managed-ui"
+}

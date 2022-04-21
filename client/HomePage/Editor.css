@@ -1,0 +1,9 @@
+.playground-editor {
+    border-color: var(--spectrum-alias-border-color-mid, #e1e1e1);
+    border-style: solid;
+        flex-grow: 1;
+        box-sizing: border-box;
+        min-height: 500px;
+        min-width: 100px;
+        max-height: min(90%, 90vh);
+}

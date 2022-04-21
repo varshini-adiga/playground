@@ -1,0 +1,9 @@
+{
+    "name": "Group Chat PG",
+    "id": "com.adobe.hz.groupChat.pg",
+    "main": "code.js",
+    "editorType": ["canvas"],
+    "ui": "ui.html",
+    "type": "widget",
+    "icon": "chat.png"
+}

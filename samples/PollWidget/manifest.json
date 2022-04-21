@@ -1,0 +1,12 @@
+{
+    "name": "Poll Widget PG",
+    "id": "com.adobe.hz.pollWidget.pg",
+    "main": "index.js",
+    "editorType": ["canvas"],
+    "ui": "index.html",
+    "type": "widget",
+    "icon": {
+        "light": "icon-light.png",
+        "dark": "icon-dark.png"
+    }
+}

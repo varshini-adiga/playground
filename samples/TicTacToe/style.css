@@ -1,0 +1,71 @@
+:root {
+  --cell-size: 70px;
+  --cell-border-width: 1px;
+  --image-size: 50px;
+}
+
+section {
+  text-align: center;
+}
+
+.gameContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: calc(3 * var(--cell-size) + 2 * var(--cell-border-width));
+  margin: 10px auto;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--cell-size);
+  height: var(--cell-size);
+  box-shadow: 0 0 0 1px gray;
+  border: var(--cell-border-width) solid gray;
+  cursor: pointer;
+  line-height: var(--cell-size);
+  font-size: var(--image-size);
+}
+
+.startScreenButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.gameButton {
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 11px;
+  padding-right: 11px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.gameButton:disabled {
+  background-color: #b9b9b9;
+  color: #ebebeb;
+  cursor: default;
+}
+
+.gameStart,
+.gameRestart {
+  background-color: #30b730;
+}
+
+.gameJoin {
+  background-color: #5f8db8;
+}
+
+.gameStatus {
+  margin: 15px auto;
+}
+
+.userAvatar {
+  display: none;
+  width: var(--image-size);
+  height: var(--image-size);
+}
